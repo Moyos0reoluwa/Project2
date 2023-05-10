@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+.bg-2 {
+    background-color: #121212;
+}
+
+.border-custom {
+    border: 1px solid #444;
+    transition: all .4s ease-in-out;
+}
+
+.border-custom:hover {
+    border-color: var(--bs-blue);
+}
+
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1.2rem
+}
+
+.btn {
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.icon:hover {
+    background-color: var(--bs-blue);
+}
+
+.service:hover .icon {
+    background-color: var(--bs-blue);
+}
+
+/* .swiper-pagination-bullets {
+    background-color: #fff;
+} */
+
+.project {
+    overflow: hidden;
+    position: relative;
+}
+
+.project .overlay {
+    padding: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.project:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.review img {
+    width: 90px;
+    border-radius: 100px;
+}
+
+.team-member .divider {
+    background-color: #555;
+    height: 1px;
+}
+
+.team-member .links .icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid #555;
+}
+
+.team-member .links .icon:hover {
+    background-color: var(--bs-blue);
+    border-color: var(--bs-blue);
+}
+
+/* contact */
+
+#contact .form-control {
+    background-color: transparent;
+    border: 1px solid #555;
+    border-radius: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+#insta-section {
+    position: relative;
+}
+
+#insta-section .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* footer */
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--bs-body);
+}
+
+/* scroll-to-top */
+
+.scroll-to-top {
+    text-decoration: none;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.scroll-to-top:hover {
+    color: #fff;
+}
